@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0px; 
+}
+ body{
+    background-color: #09B373;
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+ }
+
+ .container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+ }
+
+/* to align img size with other input elements */
+img{
+    height: 30px;
+    width: 30px;
+}
+
+/* main calculator form style */
+.calculator{
+    padding:2px;
+    height:400px;
+    width:300px;
+    border:1px solid black;
+    border-radius:5px;
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-template-rows:repeat(6,1fr);
+    background-color:lightgray;
+}
+
+/* grid items */
+#calc{
+    grid-column-start:1;
+    grid-column-end:4;
+    background-color:lightgray;
+    color:darkolivegreen;
+    font-size:2rem;
+    border:2px solid gray;
+}
+button{
+    background-color: #FFBB19;
+    color: white;
+    font-size: 2rem;
+    transition-duration: 0.4s;
+    border-color: #FFBB19;
+}
+.delete {
+    background-color:white;
+    border-color:gray;
+}
+
+#equal{
+    background-color:#09B373;
+    font-size:2rem;
+    font-weight: bold;
+    transition-duration: 0.4s;
+    border-color: #078857;
+}
+
+/* Hover and animation */
+#equal:hover{
+    background-color:lightgray;
+    border:2px solid #078857;
+    color: black;
+}
+button:hover{
+    background-color:lightgray;
+    border:2px solid #ca8f06;
+    color: black;
+}
+
+
+
+
+
